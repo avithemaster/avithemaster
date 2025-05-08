@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAU - Mid Sem Exam</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SAU</h1>
+        <p>Mid Sem Exam March 2025</p>
+    </div><div class="container content">
+    <h2>Section Item 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur...</p>
+    
+    <h4>Background</h4>
+    <button class="btn btn-primary">.bg-primary</button>
+    <button class="btn btn-secondary">.bg-secondary</button>
+    <button class="btn btn-success">.bg-success</button>
+    <button class="btn btn-danger">.bg-danger</button>
+
+    <h4 class="mt-4">Tables</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First</th>
+                <th>Last</th>
+                <th>Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 class="mt-4">Images</h4>
+    <img src="https://via.placeholder.com/800x300" class="img-fluid mb-3" alt="Main Image">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="https://via.placeholder.com/200" class="img-fluid" alt="Thumbnail">
+        </div>
+        <div class="col-md-3">
+            <img src="https://via.placeholder.com/200" class="img-fluid" alt="Thumbnail">
+        </div>
+        <div class="col-md-3">
+            <img src="https://via.placeholder.com/200" class="img-fluid" alt="Thumbnail">
+        </div>
+        <div class="col-md-3">
+            <img src="https://via.placeholder.com/200" class="img-fluid" alt="Thumbnail">
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Control Flow & Loops</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input, button { margin: 5px; }
+        table { border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid black; padding: 5px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h2>Multiplication Table Generator</h2>
+    <input type="number" id="tableNumber" placeholder="Enter number">
+    <button onclick="generateTable()">Generate Table</button>
+    <div id="tableOutput"></div><h2>Hands-on Activity: JavaScript Control Flow & Loops</h2>
+<label>Enter a number: </label>
+<input type="number" id="userNumber">
+<button onclick="checkEvenOdd()">Check Even or Odd</button>
+<button onclick="printOneToTen()">Print 1 to 10</button>
+<button onclick="countDown()">Count Down 5 to 1</button>
+<p id="output"></p>
+
+<script>
+    function generateTable() {
+        let num = document.getElementById('tableNumber').value;
+        let output = '<h3>Table for ' + num + ':</h3><table>';
+        for (let i = 1; i <= 10; i++) {
+            output += '<tr><td>' + num + ' x ' + i + '</td><td>' + (num * i) + '</td></tr>';
+        }
+        output += '</table>';
+        document.getElementById('tableOutput').innerHTML = output;
+    }
+
+    function checkEvenOdd() {
+        let num = document.getElementById('userNumber').value;
+        let result = num % 2 === 0 ? num + ' is Even.' : num + ' is Odd.';
+        document.getElementById('output').innerText = result;
+    }
+
+    function printOneToTen() {
+        let result = '';
+        for (let i = 1; i <= 10; i++) {
+            result += i + ' ';
+        }
+        document.getElementById('output').innerText = result;
+    }
+
+    function countDown() {
+        let result = '';
+        for (let i = 5; i >= 1; i--) {
+            result += i + ' ';
+        }
+        document.getElementById('output').innerText = result;
+    }
+<h2 class="mt-4">Section Item End</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur...</p></div>
+
+
+</script>
+
+</body>
+</html>

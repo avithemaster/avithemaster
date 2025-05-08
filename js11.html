@@ -1,0 +1,25 @@
+<h2>Show & Hide password</h2>
+
+<!--Password Input Field-->
+<input type="Password" Id="password"Placeholder="Enter Your Password">
+<button oneclick="togglepassword()">show password</button>
+
+
+<script>
+     function togglepassword() {
+         let passwordfield= document.getElementById("password");
+
+         if(passwordField.type === "password") {
+            passwordField.type= "text";
+            event.target.textcontent = "Hide password";
+         } else {
+             passwordField.type="password";
+             event.target.textcontent = "show password";
+          }
+    }
+</script>
+
+</body>
+
+
+          

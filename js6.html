@@ -1,0 +1,34 @@
+<body>
+
+<h2>Hands-on activity: JavaScript operator</h2>
+<button onclick="performoperations()"Run activity</button>
+<div id="output"></div>
+
+<script>
+    function performoperations() {
+     let a=8;
+     let b=3;
+      
+    let addition=a+b;
+    let subtraction=a-b;
+    let multiplication=a*b;
+    let division=a/b;
+    let modulus=a%b;
+
+    let isGreater=a>b;
+    let logicalcheck=(a>5 && b <10);
+
+    let outputText=
+        <strong>results:</Strong><br>
+        Addition (a+b)=${addition} <br>
+        subtraction(a-b)=${subtraction}<br>
+        multiplication(a*b)=${multiplication}<br>
+        Division(a/b)=${division}<br>
+        modulus(a*b)=${modulus}<br><br>
+       is 'a' greater than 'b'? ${logicalcheck}
+      ;
+      document.getElementById("output").innerHTML=outputText;
+}
+</script>
+        
+        

@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Button color change</title>
+     	<STYLE>
+       		/* initial button styling*/
+       		#colorButton {
+       		padding:100px 200px
+       		font-size:56x;
+       		background-color: blue;
+       		color: white;
+       		border: none;
+       		cursor: pointer;
+       		transition: background-color 0.3s ease;
+    	}
+</style>
+</head>
+<body>
+     
+	<button id="colorButton">click me</button>
+
+     <script>
+     	//JavaScript to change color on click
+     	document.getElementById("colorButton").addEventListener("click",function() {
+     		this.style.backgroundcolor = this.style.backgroundcolor === 'red'?'blue':'red';
+	});
+     </script>
+
+</body>
+</html>
+
